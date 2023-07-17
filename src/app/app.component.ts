@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spotify-clone';
+
+  logOut(){
+    localStorage.clear();
+    window.location.href = "http://localhost:4200/"
+    // this.router.navigate(['/'])
+  }
 }

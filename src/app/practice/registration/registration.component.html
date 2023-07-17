@@ -1,0 +1,27 @@
+    <form class="form" [formGroup]="registrationForm">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" formControlName="firstName" class="input" placeholder="Enter First Name" id="fname" >
+          </div>
+          <div class="mb-3">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" formControlName="lastName" class="input" placeholder="Enter Last Name" id="lname" >
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" formControlName="email" class="input" id="exampleInputEmail1" placeholder="Enter Email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" formControlName="password" class="input" placeholder="Enter password" id="password">
+        </div>
+        <div class="mb-3">
+            <label for="cpassword" class="form-label">Confirm Password</label>
+            <input type="password" formControlName="confirmPassword" class="input" placeholder="Enter confirm password" id="cpassword"><br>
+            <span *ngIf="errMsg" [style.color]="'red'">Password and Confirm Pasword does not Match</span>
+          </div>
+        
+        <button type="button" class="btn btn-primary" (click)="register()">Submit</button>
+        <button type="reset" class="btn btn-warning">Reset</button><br>
+        <a routerLink="/">Already Have an Account...</a>
+      </form>

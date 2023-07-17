@@ -1,0 +1,40 @@
+.spotify__top-nav{
+    width: 100%;
+    height: 65px;
+    background: #0F0F0F;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.spotify__top-nav_focus-title{
+    flex-basis: 1268px;
+    margin-left: -814px;
+    font-size: 22px;
+}
+
+.spotify__top-nav_auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.spotify__top-nav_auth_login{
+    background-color: white;
+    padding: 0 5px;
+    height: 34px;
+    color: black;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+}

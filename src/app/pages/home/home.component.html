@@ -1,0 +1,22 @@
+<div class="spotify__home-container row">
+    <div class="spotify__home-container_side-bar col-2">
+        <div class="spotify__side-bar-items">
+            <img src="assets/Spotify_White.png" class="m-3" width="150px" alt="spotify light logo">
+        </div>
+        <div class="spotify__side-bar-items">
+            <a>Home</a>
+        </div>
+        <div class="spotify__side-bar-items">
+            <a>Search</a>
+        </div>
+        <div class="spotify__side-bar-items">
+            <a>Library</a>
+        </div>
+    </div>
+    <div class="spotify__home-container_playlist-container col-10">
+        <app-top-nav></app-top-nav>
+        <div [style.padding-top]="'48px'" class="mt-5 container">
+            <app-song-card></app-song-card>
+        </div>
+    </div>
+</div>
